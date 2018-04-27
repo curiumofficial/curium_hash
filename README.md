@@ -1,7 +1,7 @@
-dash_hash (python) v1.3.1
+curium_hash (python) v1.3.1
 ===========================
 
-Python module for Dash's X11 hashing.
+Python module for Curium's X11 hashing.
 
 
 Install

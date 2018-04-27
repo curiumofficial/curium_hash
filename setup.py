@@ -1,8 +1,8 @@
 from distutils.core import setup, Extension
 
-dash_hash_module = Extension('dash_hash',
-                                 sources = ['dashmodule.c',
-                                            'dash.c',
+curium_hash_module = Extension('curium_hash',
+                                 sources = ['curiummodule.c',
+                                            'curium.c',
                                             'sha3/blake.c',
                                             'sha3/bmw.c',
                                             'sha3/groestl.c',
@@ -16,7 +16,7 @@ dash_hash_module = Extension('dash_hash',
                                             'sha3/shavite.c'],
                                include_dirs=['.', './sha3'])
 
-setup (name = 'dash_hash',
+setup (name = 'curium_hash',
        version = '1.3.1',
-       description = 'Binding for Dash X11 proof of work hashing.',
-       ext_modules = [dash_hash_module])
+       description = 'Binding for Curium X11 proof of work hashing.',
+       ext_modules = [curium_hash_module])
